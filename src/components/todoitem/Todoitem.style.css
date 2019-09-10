@@ -1,0 +1,36 @@
+.completed {
+    color: lightgray;
+}
+
+.Todo-task.completed:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.5rem;
+    display:block;
+    width: auto;
+    height: 2px;
+    background: whitesmoke;
+    animation: strikeitem 0.6s ease-out 0s forwards;
+}
+
+.Todo{
+    display:flex;
+    width: auto;
+    margin: 0 0rem 4px;
+    padding: 1.1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+}
+
+.Todo-task{
+    position: relative;
+    transition: opacity 0.4s linear;
+}
+
+@keyframes strikeitem{
+    to{
+        width: calc(100% + 1rem);
+    }
+}

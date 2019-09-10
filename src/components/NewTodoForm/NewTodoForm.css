@@ -1,0 +1,30 @@
+.NewTodoForm{
+    margin-top: 3rem;
+    width: auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.NewTodoForm label{
+    min-width: 60%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.NewTodoForm input{
+    border: none;
+    background: #f7f1f1;
+    padding: 0 1.5em;
+    font-size: initial;
+    
+}
+
+.NewTodoForm button{
+    padding: 0 1.3rem;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-left: 5px;
+}
